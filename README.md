@@ -1,6 +1,7 @@
 <div align="center">
 
-<!-- Banner -->
+<img src="https://n4tzzofficial.my.id/assets/cyxra/cyxra-logo.png" alt="Cyxra Logo" width="140" />
+
 <h1>Cyxra</h1>
 
 <b>Enterprise Infrastructure Security</b><br>
@@ -198,6 +199,10 @@ Repositori ini disediakan **untuk tujuan informasi**. Tidak ada source code, bin
 ---
 
 <div align="center">
+
+<img src="https://n4tzzofficial.my.id/assets/cyxra/cyxra-logo.png" alt="Cyxra Logo" width="60" />
+
+<br><br>
 
 **Cyxra** — perlindungan lanjutan untuk infrastruktur digital Anda.
 
