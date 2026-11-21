@@ -1,136 +1,57 @@
-<div align="center">
+# Cyxra — Enterprise Infrastructure Security
 
-# Cyxra
+**Cyxra** adalah solusi keamanan infrastruktur perusahaan yang dikembangkan oleh **N4tzzNetwork Org.** untuk mengatasi keterbatasan firewall konvensional dalam memberikan perlindungan menyeluruh bagi ekosistem organisasi. Fokus utamanya adalah pengamanan infrastruktur jaringan dan sistem kontrol dari berbagai potensi ancaman.
 
-**Enterprise Infrastructure Security — built to overcome the limitations of conventional firewalls.**
-
-[![Status](https://img.shields.io/badge/status-production-0a7d32?style=flat-square)](#)
-[![Platform](https://img.shields.io/badge/platform-enterprise-1f6feb?style=flat-square)](#)
-[![Maintained by](https://img.shields.io/badge/maintained%20by-N4tzzNetwork%20Org.-6e40c9?style=flat-square)](#)
-[![License](https://img.shields.io/badge/license-proprietary-8b949e?style=flat-square)](#license)
-
-[Website](https://cyxra.n4tzzofficial.my.id) · [Contact](mailto:cyxra@n4tzzhost.my.id) · [WhatsApp Catalog](#contact)
-
-</div>
+Sistem inti Cyxra telah diimplementasikan secara penuh pada infrastruktur N4tzzNetwork dan melalui serangkaian pengujian internal, termasuk simulasi penetrasi. Saat ini, Cyxra tersedia secara terbatas untuk perusahaan atau organisasi mitra yang telah terverifikasi.
 
 ---
 
-## Overview
+## Latar Belakang
 
-**Cyxra** is an enterprise infrastructure security solution developed by **N4tzzNetwork Org.**, engineered to overcome the limitations of conventional firewalls by providing advanced protection for digital infrastructure.
-
-Traditional perimeter firewalls were designed for a world of static networks and predictable traffic. Modern infrastructure — APIs, autonomous agents, distributed services, and multi-tenant workloads — does not fit that model. Cyxra is built for that reality.
-
-Cyxra is also the **underlying infrastructure architecture and security layer** for the N4tzzNetwork ecosystem, including **[ZixcAI](https://zixcai.n4tzzofficial.my.id)** — an agentic AI platform. Every agentic turn, tool call, and data boundary in ZixcAI runs on top of and is protected by Cyxra.
+Firewall konvensional dirancang untuk model perimeter statis dan lalu lintas yang dapat diprediksi. Infrastruktur modern — yang mencakup API, layanan terdistribusi, sistem kontrol, dan beban kerja multi-tenant — tidak sepenuhnya cocok dengan model tersebut. Cyxra dibangun untuk menjembatani kesenjangan itu: sebuah lapisan keamanan yang bekerja pada level infrastruktur, bukan hanya di tepi jaringan.
 
 ---
 
-## Why Cyxra
+## Pendekatan
 
-Conventional firewalls stop at the perimeter. Cyxra extends protection into the infrastructure layer itself:
+Cyxra tidak menyalin konfigurasi sistem inti N4tzzNetwork secara mentah ke lingkungan klien. Pendekatan yang digunakan adalah **isolasi dan penyesuaian**:
 
-| Limitation of conventional firewalls | Cyxra approach |
+- Setiap deployment dirancang agar kompatibel dengan arsitektur klien.
+- Konfigurasi disesuaikan dengan kebutuhan masing-masing organisasi.
+- Klien tidak menerima replika persis infrastruktur inti N4tzzNetwork, karena hal itu justru berpotensi menimbulkan celah keamanan tersendiri.
+
+Tujuannya adalah menjaga keamanan tetap optimal untuk ekosistem klien, tanpa mengorbankan prinsip defense-in-depth.
+
+---
+
+## Model Keterlibatan
+
+Cyxra bersifat **partner-exclusive**. Akses integrasi hanya dibuka untuk perusahaan atau organisasi yang telah resmi terverifikasi bersama N4tzzNetwork.
+
+Untuk memulai, hubungi tim Cyxra dengan menyertakan:
+
+1. Gambaran umum infrastruktur (skala, stack, eksposur).
+2. Tujuan keamanan dan celah yang ingin ditutup.
+3. Preferensi keterlibatan (evaluasi teknis, dukungan deployment, atau lisensi enterprise).
+
+---
+
+## Dukungan Operasional
+
+Keamanan klien didukung oleh tim siber yang siaga 24 jam, dengan target waktu respons maksimal **10 menit** untuk setiap laporan atau deteksi ancaman.
+
+---
+
+## Kontak
+
+| Kanal | Detail |
 | --- | --- |
-| Rule-based, port/IP-centric | Workload- and identity-aware protection |
-| Blind to application-layer behavior | Application-aware traffic evaluation |
-| Static policy, high operational overhead | Policy designed for dynamic infrastructure |
-| No awareness of agentic/AI workloads | Built to protect autonomous and API-driven systems |
-| Perimeter-only trust model | Defense-in-depth across the infrastructure |
-
----
-
-## Key Capabilities
-
-- **Advanced infrastructure protection** — engineered beyond classic firewall models for modern workloads.
-- **Application-aware security** — evaluates behavior and context, not only ports and addresses.
-- **API-first surface** — protects service-to-service and API traffic by design.
-- **Agentic workload awareness** — a security layer built for AI agents, tool calls, and automated systems.
-- **Defense-in-depth model** — multiple protection layers rather than a single perimeter chokepoint.
-- **Enterprise-grade operations** — designed for teams that need reliable, auditable security controls.
-
-> Detailed technical capabilities, rule sets, and deployment topology are confidential and available under NDA. See [Contact](#contact).
-
----
-
-## Role in the N4tzzNetwork Ecosystem
-
-Cyxra is the **security and infrastructure foundation** for N4tzzNetwork products.
-
-```
-N4tzzNetwork
-│
-├── AI        → ZixcAI  → AI Models
-├── Software  → NzRouter → NPM Tools
-└── Systems   → APIs     → Infrastructure
-                     ▲
-                     │
-                   Cyxra
-        (architecture + security layer)
-```
-
-**ZixcAI** (agentic AI chat + runtime) is built on top of Cyxra. Its runtime, API surface, and data layer are protected by Cyxra's architecture and security controls.
-
----
-
-## Intended Users
-
-- Enterprises protecting modern, API-driven infrastructure
-- Teams deploying autonomous agents and AI workloads
-- Organizations moving beyond perimeter-only firewall models
-- Platform teams that need a security layer aligned with their application architecture
-
----
-
-## Deployment & Support
-
-Cyxra is delivered as an **enterprise solution**. Engagement models:
-
-- **Technical evaluation** — architecture review and fit assessment
-- **Deployment support** — guided rollout for your environment
-- **Enterprise licensing** — commercial terms tailored to your scale
-
-To start, contact us with:
-1. Your infrastructure overview (scale, stack, exposure)
-2. Security objectives and current gaps
-3. Preferred engagement (evaluation / deployment / licensing)
-
----
-
-## Security Disclosure
-
-If you believe you have found a security issue in Cyxra, **do not open a public issue**. Report it privately:
-
-- **Email:** [cyxra@n4tzzhost.my.id](mailto:cyxra@n4tzzhost.my.id)
-- Include: affected component, reproduction steps, and impact assessment.
-
-Responsible disclosure is appreciated. We will acknowledge receipt and coordinate next steps.
-
----
-
-## Contact
-
-| Channel | Detail |
-| --- | --- |
-| Website | [cyxra.n4tzzofficial.my.id](https://cyxra.n4tzzofficial.my.id) |
+| Website | [https://cyxra.n4tzzofficial.my.id](https://cyxra.n4tzzofficial.my.id) |
 | Email | [cyxra@n4tzzhost.my.id](mailto:cyxra@n4tzzhost.my.id) |
-| WhatsApp | N4tzzOfficial WhatsApp Catalog |
-| Organization | N4tzzNetwork Org. |
-| Maintainer | [@N4tzzOfficial](https://github.com/n4tzz) |
+| Organisasi | N4tzzNetwork Org. |
 
 ---
 
-## License
+## Lisensi
 
-**Proprietary.** Cyxra is a commercial enterprise solution by N4tzzNetwork Org. All rights reserved. This repository is provided for informational purposes only. No source code, binaries, or implementation details are distributed here.
-
-Redistribution, reverse engineering, or commercial use of Cyxra without written permission from N4tzzNetwork Org. is prohibited.
-
----
-
-<div align="center">
-
-**Cyxra** — advanced protection for digital infrastructure.
-
-Built by **N4tzzNetwork Org.**
-
-</div>
+Cyxra adalah solusi enterprise proprietary. Repositori ini disediakan untuk tujuan informasi. Tidak ada source code, binary, atau detail implementasi yang didistribusikan di sini. Seluruh hak cipta dimiliki oleh N4tzzNetwork Org.
